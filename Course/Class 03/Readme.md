@@ -227,6 +227,7 @@ if __name__ == '__main__':
 ```
 Flask==2.0.1
 psycopg2-binary==2.9.1
+Werkzeug==1.0.1
 ```
 
 #### **Step 3.4: Create the Flask Dockerfile**
@@ -321,6 +322,8 @@ cd my-multi-container-app
 **Where to Run:** In your terminal or command prompt.
 
 ```bash
+docker-compose build
+docker-compose build --no-cache
 docker-compose up -d
 ```
 
@@ -527,6 +530,8 @@ docker volume create my-python-data
 **Where to Run:** In your terminal or command prompt.
 
 ```bash
+docker-compose build
+docker-compose build --no-cache
 docker-compose up -d
 ```
 
